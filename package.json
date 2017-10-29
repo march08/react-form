@@ -1,5 +1,5 @@
 {
-  "name": "react-form",
+  "name": "react-rnform",
   "version": "0.1.0",
   "description": "React Form Components to make your life easier.",
   "main": "src/index.js",
@@ -22,10 +22,14 @@
     "url": "https://github.com/march08/react-form/issues"
   },
   "homepage": "https://github.com/march08/react-form#readme",
+  "peerDependencies": {
+    "react": ">=16.0.0",
+    "classnames": ">=2.2.0"
+  },
   "dependencies": {
-    "classnames": "^2.2.5",
     "form-serialize": "^0.7.2",
     "prop-types": "^15.6.0",
-    "react": "^16.0.0"
+    "react": "^16.x",
+    "classnames": "^2.x"
   }
 }
