@@ -5,7 +5,6 @@ import classnames from 'classnames'
 
 class Form extends Component {
 
-
   static propTypes = {
     onSubmit: PropTypes.func.isRequired,
     children: PropTypes.node,
@@ -15,7 +14,6 @@ class Form extends Component {
   static defaultProps = {
     className: null
   }
-
 
   constructor(...args) {
     super(...args)
@@ -50,15 +48,9 @@ class Form extends Component {
   }
 
   render() {
-    const { className, ...rest } = this.props
+    const { className } = this.props
     return (
-      <form
-        onSubmit={ this.formSubmit }
-        noValidate
-        className={ classnames(className) }
-        ref={ this.setRef('form') }
-        { ...rest }
-      >
+      <form onSubmit={ this.formSubmit } noValidate className={ classnames(className) } ref={ this.setRef('form') }>
         {this.props.children}
       </form>
     )
