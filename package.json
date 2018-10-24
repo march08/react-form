@@ -25,7 +25,8 @@
   },
   "homepage": "https://github.com/march08/react-form#readme",
   "peerDependencies": {
-    "react": ">=16.0.0"
+    "react": ">=16.0.0",
+    "form-serialize": "^0.7.2"
   },
   "dependencies": {
     "form-serialize": "^0.7.2",
