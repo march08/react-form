@@ -1,14 +1,11 @@
 {
   "presets": [
-    "es2015",
-    "es2015-node6",
-    "react",
-    "stage-3"
+    "env",
+    "react"
   ],
   "plugins": [
     "transform-object-rest-spread",
-    // "transform-decorators-legacy",
     "add-module-exports",
-    "transform-class-properties"
+    "transform-class-properties",
   ]
 }
